@@ -96,7 +96,7 @@ export async function fetchCardData() {
     const numberOfCustomers = Number(customerCountResult.rows[0].count ?? "0");
 
     // Simulate delay for effect
-    await new Promise((resolve) => setTimeout(resolve, 1000)); // 1 second delay
+    await new Promise((resolve) => setTimeout(resolve, 6000)); // 1 second delay
 
     // Fetch invoice status after the delay
     const invoiceStatusPromise = sql`SELECT
